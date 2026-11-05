@@ -1,0 +1,25 @@
+[project]
+name = "sample-agent-evals-with-amazon-bedrock"
+version = "0.1.0"
+description = "Code samples for a hands-on workshop building an automated evaluation pipeline for AI agents on Amazon Bedrock"
+requires-python = ">=3.12"
+dependencies = [
+    "boto3>=1.43.8,<2",  # Python SDK for AWS
+    "ipykernel",  # Run the lab notebooks
+    "matplotlib>=3.9,<4",  # Charts
+    "pandas>=2.3",  # Tabular results
+    "scikit-learn>=1.5",  # Agreement metrics (Cohen's kappa, confusion matrix) in Lab 3
+    "strands-agents>=1.45.0",  # The agent under test (ClaimClerk)
+]
+
+# Optional extras, not needed for the core labs:
+[project.optional-dependencies]
+decider = [
+    "strands-decider>=0.1.0",  # System-one decision model for the optional Lab 5 (Strands Decider)
+]
+
+# This project is only for dependencies - not building libraries:
+[tool.setuptools]
+py-modules = []
+packages = []
+

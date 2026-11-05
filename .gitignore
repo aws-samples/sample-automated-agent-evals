@@ -1,0 +1,46 @@
+# IDE, editor and assistant files
+.vscode/
+.kiro/
+.idea/
+.claude/
+CLAUDE.md
+*.swp
+*.swo
+*~
+
+# Python virtual environments and local settings
+.venv/
+venv/
+env/
+ENV/
+.env
+.python-version
+
+# Python cache and packaging output
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Test and coverage output
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# macOS and Windows
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# LaTeX intermediate files from diagrams/build.sh. The rendered PNGs in diagrams/ are committed.
+
+
+# Local build output
+build/
+
